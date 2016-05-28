@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+	<html appml-data="Blogposts.json" >
+		<head>
+			<meta charset="UTF-8">
+			
+			<title> Aarsh Patil | Blog Space </title>
+			
+			<link rel="stylesheet" type="text/css" href="Blog.css">
+			<script src="http://www.w3schools.com/appml/2.0.3/appml.js"></script>
+		</head>
+		
+		<body>
+
+				<header>
+				<!-- Navigation Section -->
+				
+				<nav class="fixed-nav-bar">
+                    <ul id="nav-bar"> 
+            	        <li id="topnavbar-item"><a href="index.html">HOME</a></li>
+                        <li id="topnavbar-item"><a href="Blog.html">BLOG SPACE</a></li>
+                        <li id="topnavbar-item"><a href="AboutMe.html">ABOUT ME</a></li>
+                    </ul>
+				</nav>
+				
+				</header>
+				
+				
+				<!-- Heading Section -->
+				
+				<h1><strong> BLOG SPACE </strong></h1>
+				
+<!--  ---------------------------------------------------------------------------------------------------- -->				
+				<!-- Blog post and article section -->				
+				
+			<div class="container" id="BlogPost" appml-repeat="post in blogposts">
+					<article>
+					
+						<svg height="100" width="100">
+  							<circle cx="50" cy="50" r="40" fill="#00dd00" />
+						</svg> 
+					<div id="date-container">
+						{{ date }}
+					</div>
+					
+					<h3>{{ heading }}</h3>
+					
+					<h5 id="left"> {{ category }}</h5>
+					
+					 
+					<h5 id="right"><div id="star">{{ starNumber }}<div></h5></h5>
+						<svg height="80" width="80" id="starnumbercircle">
+  							<circle cx="40" cy="40" r="20" fill="#dd0000" />
+						</svg>
+					
+					<p id="bodyOfPost">{{ body }}
+					</p>
+					
+					<p id="tagsOfPost">
+						<i>
+							<strong>Tags: </strong>
+							{{ tags }}
+						</i>
+					</p>
+					
+					</article>
+				</div>
+				
+
+<!--  ---------------------------------------------------------------------------------------------------- -->
+				
+				<!-- about me side section -->
+				
+				<div class="container" id="aboutme">
+					<img id="Cover" src="assets/Cover.png" alt="Cover Picture">
+						<p>
+							Welcome to blog section.<br />
+							I am a student Engineer, working on simple projects just to grab hold new technology, and share
+							with other people, because sharing knowledge increases our own capacity of knowledge.
+						</p>
+						
+						<!-- Social Sharing Section -->
+			
+							<nav class="fixed-nav-bar-social">
+								<ul id="socialBar">
+									<li id="socialBarElement">
+										<a href="https://www.facebook.com/aarsh.patil" target="_blank">	<img src="assets/social/facebook_filled-50.png" class="smallIconsSocial"> </a>
+									</li>
+									<li id="socialBarElement">
+										<a href="https://twitter.com/APatil010" target="_blank">	<img src="assets/social/twitter_filled-50.png" class="smallIconsSocial"> </a>			
+									</li>
+									<li id="socialBarElement">
+										<a href="https://instagram.com/ashter31/" target="_blank">	<img src="assets/social/instagram_filled-50.png" class="smallIconsSocial"> </a>
+									</li>
+									<li id="socialBarElement">
+										<a href="#openModal">	<img src="assets/social/message_filled-50.png" class="smallIconsSocial"> </a>
+									</li>
+								</ul>
+							</nav>
+							
+							<div id="openModal" class="modalDialog">
+								<div>
+									<a href="#close" title="Close" class="close">X</a>
+										<h2>Email-Id:</h2>
+										<p>patilaarsh@gmail.com</p>
+										
+								</div>
+							</div>
+				
+				
+		<!-- My Favourites Section -->
+			<h4 id="favourites"> Favourites :</h4>
+			
+			<ul>
+				<li><a href="http://www.apple.com/" target="_blank">Apple</a></li>
+				<li><a href="http://www.9to5mac.com/" target="_blank">9to5mac</a></li>
+				<li><a href="http://www.lonelyplanet.com/" target="_blank">LonelyPlanet</a></li>
+				<li><a href="http://www.allrecipies.com/" target="_blank">AllRecipies</a></li>
+				<li><a href="http://www.codecademy.com/" target="_blank">Codecademy</a></li>
+				<li><a href="http://www.espncricinfo.com/" target="_blank">ESPN Cricinfo</a></li>
+				<li><a href="http://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+			</ul>
+		</div>
+		
+		</body>
+	</html>

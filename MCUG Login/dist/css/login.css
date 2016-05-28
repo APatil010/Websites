@@ -1,0 +1,15 @@
+body {
+    background-color: #34495E;
+}
+.row {
+    margin-top: 150pt;
+}
+.login-section {
+    padding-bottom: 2%;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+}
+.forgot-password {
+    color: grey;
+}

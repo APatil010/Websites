@@ -1,0 +1,237 @@
+body {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+/* Navigation Bar Section */
+
+#nav-bar {
+	background-color: #00E2E4;
+	margin: 0 0 0 0;
+	padding: 5px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+}
+#topnavbar-item {
+	display: inline;
+	padding: 5px 120px 5px 120px;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;	
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* Main Header Section */
+header {
+	background-color: #00D3E9;
+	background-size: cover;
+	box-shadow: 0px 2px 5px #444499;
+}
+
+#Cover {
+	margin-top: 50px;
+	margin-bottom: 5px;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	border: 10px solid white;
+	z-index: 25;
+	box-shadow: 0px 5px 8px #000;
+}
+
+h1 {
+	font-family: fantasy;
+	font-style: normal;
+	font-weight: 500;
+	color: white;
+	font-size: 80px;
+	z-index: 25;
+	text-shadow: 2px 2px #444499;
+}
+
+h2 {
+	margin-bottom: 10px;
+	font-family: American Typewriter;
+	font-style: normal;
+	font-weight: 500;
+	color: white;
+	font-size: 40px;
+	z-index: 25;
+	padding-bottom: 15px;
+	text-shadow: 2px 2px #444499;
+}
+
+/* Description Section */
+
+.HomePageDescription {
+	text-align: justify;
+	padding: 5px 110px 5px 110px;
+	font-family: Calibri;
+	font-size: 30px;
+	color: black;
+	font-style: italic;
+}
+
+/* Social Website Sharing Section */
+#socialBar {
+	background-color: rgba(0,0,0,0);
+}
+#socialBarElement {
+	display: inline;
+	padding: 5px 20px 5px 20px;
+}
+.smallIconsSocial {
+	width: 40px;
+	height: 40px;
+}
+
+/* Footer Section */
+
+footer {
+	background-color: rgba(0,0,0,0.5);
+	color: snow;
+	font-size: 15px;
+	line-height: 20px;
+	box-shadow: 0px -4px 10px rgba(0,0,0,0.5);
+}
+
+/* For small mobile devices */
+
+@media (max-width: 610px) {
+    #topnavbar-item {
+        display: block;
+		font-size: 16px;
+    }
+	
+	#Cover {
+		width: 150px;
+		height: 150px;
+		border-radius: 150px;
+		border: 7px solid white;
+	}
+	
+	h1 {
+		font-size: 50px;
+	}
+	
+	h2 {
+		font-size: 25px;
+	}
+	
+	.HomePageDescription {
+		padding: 40px;
+		font-size: 25px;
+	}
+	
+	.smallIconsSocial {
+		width: 25px;
+		height: 25px;
+	}
+	
+	footer{
+		line-height: 15px;
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1030px) {
+	#topnavbar-item {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	#Cover {
+		width: 150px;
+		height: 150px;
+		border-radius: 150px;
+		border: 7px solid white;
+	}
+	
+	h1 {
+		font-size: 60px;
+	}
+	
+	h2 {
+		font-size: 30px;
+	}
+	
+	.HomePageDescription {
+		padding: 60px;
+		font-size: 25px;
+	}
+	
+	.smallIconsSocial {
+		width: 30px;
+		height: 30px;
+	}
+	
+	footer{
+		line-height: 15px;
+		font-size: 14px;
+	}
+}
+
+/* Modal View Section */
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #f33;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#f33, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { 
+	background: #00d9ff; 
+}

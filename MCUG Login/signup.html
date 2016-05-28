@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>MCUG Login</title>
+        
+        <!-- Loading Bootstrap -->
+        <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Loading Flat UI -->
+        <link href="dist/css/flat-ui.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <!-- Form class for registration -->
+        
+        <div class="container signup-section">
+            <form action="insert.php" method="post">
+                <!-- Heading of Form -->
+                <div class="row">
+                    <h1>MCUG Registration</h1>
+                </div>
+
+                <p><font color="red">*</font> marked fields are compulsory.</p>
+
+                <!-- Full Name -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                            <input type="text" value="" name="fullname" placeholder="Full Name *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Roll Number -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                        <input type="text" value="" name="rollnumber" placeholder="Roll Number *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                            <input type="text" value="" name="address" placeholder="Address *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Birthdate -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                            <input type="text" value="" name="birthdate" placeholder="Birthdate (dd/mm/yy) *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                        <input type="text" value="" name="email" placeholder="E-mail *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                        <input type="text" value="" name="phonenumber" placeholder="Phone Number *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                        <input type="password" value="" name="password" placeholder="Password *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="row">
+                    <div class="form-group has-feedback col-xs-4">
+                        <input type="password" value="" name="confirmpassword" placeholder="Confirm Password *" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="row">
+                    <div class="col-xs-2">
+                        <p>Gender: *</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <select required class="form-control select select-primary select-block mbl" name="gender">
+                            <option selected disabled>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Department Name -->
+                <div class="row">
+                    <div class="col-xs-2">
+                        <p>Department: *</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <select required class="form-control select select-primary select-block mbl" name="department">
+                            <option selected disabled>Department</option>
+                            <option>Computer</option>
+                            <option>Civil</option>
+                            <option>E &amp; TC</option>
+                            <option>Mechanical</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Year of Admission -->
+                <div class="row">
+                    <div class="col-xs-2">
+                        <p>Year of Admission: *</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <select required class="form-control select select-primary select-block mbl" name="yearofadmission">
+                            <option selected disabled>Year</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Current Class -->
+                <div class="row">
+                    <div class="col-xs-2">
+                        <p>Class: *</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <select required class="form-control select select-primary select-block mbl" name="class">
+                            <option selected disabled>Class</option>
+                            <option>FE</option>
+                            <option>SE</option>
+                            <option>TE</option>
+                            <option>BE</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Division -->
+                <div class="row">
+                    <div class="col-xs-2">
+                        <p>Division: *</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <select required class="form-control select select-primary select-block mbl" name="division">
+                            <option selected disabled>Division</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-embossed btn-primary submit-button" value="submit">
+                <br /><br />
+            </form>
+        </div>
+    </body>
+    
+</html>

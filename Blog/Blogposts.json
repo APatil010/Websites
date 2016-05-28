@@ -1,0 +1,12 @@
+{
+	"blogposts" : [
+	 {
+	 "starNumber": 1,
+	 "date" : "Jun 05,15",
+	 "category" : "General",
+	 "heading" : "First Post",
+	 "body" : "Well, it all starts here. I have completed my website, working hard and learning something new everday to get this job completed. It had ups and downs but now I am proud of it. The languages used were HTML,CSS,JSON & AppML .Thank You for reading it. ",
+	 "tags" : "Languages, Firstpost"
+	 }
+	 ]
+}

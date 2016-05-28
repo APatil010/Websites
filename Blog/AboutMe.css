@@ -1,0 +1,149 @@
+body {
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+}
+/* Navigation Bar Section */
+
+#nav-bar {
+	background-color: #00E2E4;
+	margin: 0 0 0 0;
+	padding: 5px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+#topnavbar-item {
+	display: inline;
+	padding: 5px 120px 5px 120px;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;	
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Image Section */
+
+#Cover {
+	margin-left: 100px;
+	margin-top: 60px;
+	margin-bottom: 10px;
+	margin-right: 100px;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 200px;
+	border: 10px solid white;
+	z-index: 25;
+	box-shadow: 0px 5px 8px #000;
+}
+
+/* Detail Section */
+
+h1 {
+	margin-top: 80px;
+	margin-left: 200px;
+	margin-bottom: 5px;
+	font-size: 50px;
+	font-family: monospace;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+h2 {
+	font-size: 35px;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+#description {
+	font-size: 15px;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+/* Table Section */
+
+table {
+	border: none;
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	width: 96%;
+	border-collapse: collapse;
+}
+
+td {
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: justify;
+	border: none;
+	width: 90px;
+	height: 90px;
+}
+
+#container-1,#container-2,#container-3,#container-4 {
+	background-color: rgba(0,175,225,0.4);
+	box-shadow: 0px 2px 5px black;
+}
+
+article {
+	font-family: fantasy;
+}
+
+article > h3 {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+blockquote {
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+/* Footer Section */
+
+footer {
+	background-color: rgba(0,0,0,0.5);
+	color: snow;
+	font-size: 15px;
+	line-height: 20px;
+	box-shadow: 0px -4px 10px rgba(0,0,0,0.5);
+}
+
+ /* For small mobile devices */
+
+@media (max-width: 1030px) {
+    #topnavbar-item {
+		display: block;
+	}
+	
+	#Cover {
+		float: center;
+	}
+	
+	h1 {
+		margin-top: 50px;
+	}
+	
+	h1,h2,#description {
+		text-align: center;
+		margin-left: 0px;
+	}
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		width: auto;
+		height: auto;
+	}
+	
+}
